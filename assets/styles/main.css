@@ -1145,7 +1145,7 @@ h6, .progress-group .progress-title,
 
 h1{
   font-family: bariol, "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  color:#fff;text-transform:inherit;font-weight:normal !important;font-size:4em !important;}
+  color:#fff;text-transform:inherit;font-weight:normal !important;font-size: 3vw; !important;}
 
 
 
@@ -7373,7 +7373,7 @@ form .input-error-2:focus {
 .main-demo-hero .hero-content-wrapper .hero-content .hero-subheading, .fs-video-hero .hero-content-wrapper .hero-content .hero-subheading, .fw-video-hero .hero-content-wrapper .hero-content .hero-subheading, .text-slider-hero .hero-content-wrapper .hero-content .hero-subheading, .freelancer-hero .hero-content-wrapper .hero-content .hero-subheading, .agency2-hero .hero-content-wrapper .hero-content .hero-subheading, .animated-hero .hero-content-wrapper .hero-content .hero-subheading, .web-app-hero .hero-content-wrapper .hero-content .hero-subheading {
   margin-top: 100px;
   margin-bottom: 20px;
-  color: #999;
+  color: #fff;
 }
 
 /* ---- 20.2 Full Screen Slider ---- */

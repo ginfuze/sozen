@@ -1,52 +1,427 @@
-<!DOCTYPE HTML>
-<html lang="fr">
-    <title>Plateforme d'accompagnement continu | Plateforme Sozen</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Sozen est une plateforme d'accompagnement continu permettant aux assurances, mutuelles et prévoyances d'assister leur clients dans les problèmes de la vie quotidienne.">
-    <meta name="keywords" content="plateforme, accompagnement, continu, assurance, mutuelle, prevoyance, bénéficiaire, proches, intervenants, prestataire, assureur">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta property="og:title" content="Plateforme d'accompagnement continu"/>
-    <meta property="og:image" content="http://sozen.life/images/logo-sozen.png"/>
-    <meta property="og:site_name" content="Sozen"/>
-    <meta property="og:description" content="Sozen est une plateforme d'accompagnement continu permettant aux assurances, mutuelles et prévoyances d'assister leur clients dans les problèmes de la vie quotidienne."/>	
-  
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-        *  {font-family: arial;}
-		body{margin:0;}
-        h1 {text-align:center;font-weight: normal;font-size:32px;color:#26b496;margin:80px 0;}
-		.logo {text-align:center;color:#26b496;background:#26b496;padding:80px 0;}
-		.logo img{width:300px;}
-		.content{font-size:14px;width:70%;margin:auto;padding-bottom:80px;text-align:justify;}
-		.content p{line-height:20px;}
-		blockquote{margin:0;padding:0;font-style:italic;color:#818285;}
-		h2{color:#535353}
-		a{text-decoration:underline;color:#535353}
-    </style>
-	<body>
-		<div class="logo">
-			<img alt="Plateforme d'accompagnement continu" src="images/logo-sozen-white.png" />
-		</div>
-		<div class="content">
-			<h1>La plateforme d'accompagnement continu pour assurance, mutuelle et prévoyance </h1>
-			<h2>Sozen annonce sa pre-release pour Q4 2016</h2>
-			<p>Sozen ouvre la voie aux nouveaux usages en matière d'accompagnement des services aux assurés et permet une mise en relation personnalisée entre l'assuré, son assureur et l'intervenant prestataire dans un contexte totalement sécurisé.</p>
-			<p>Fonctionnant aussi bien sur smartphone (iOS et Androïd) que sur tablette ou ordinateur de bureau, Sozen permet aux bénéficiaires de produits d'assurance de solliciter son assureur lors d'un incident de vie et d'ouvrir ainsi un espace de suivi de l'incident (Room) auquel sont connectés toutes les parties prenantes (bénéficiaire, proches, Assureur, prestataire). Cette Room bénéficie de surcroît de l'intelligence du ChatBot qui traite des questions réponses les plus élémentaires afin de permettre aux assureurs de traiter les incidents de la manière la plus fine qui soit.</p>
-			<p>Vous êtes malade, immobilisé(e) chez vous avec un ou plusieurs enfants à charge (lever, transport école, repas, devoirs,...) et vous n'avez personne sur qui vous appuyer pour vous aider, Sozen vous met immédiatement en relation avec votre service d'assurance (*) et avec le prestataire qui sera amené à intervenir chez vous pour vous accompagner pendant votre période d'immobilisation.</p>
-			<p>Le bénéficiaire comme ses proches, voient en temps réel le déroulé de la prestation, peuvent poser des questions aussi bien à l'assurance qu'au prestataire et l'ensemble de la communauté concernée par la room se sent (r)assurée. L'Assureur comme le Prestataire sont en contact permanent avec vous pour vous tenir informé(e) du bon déroulement de la prestation jusqu'à la clôture de celle-ci.</p>
-			<p>Enfin, au-delà du service fourni au bénéficiaire de l'assurance, Sozen permet aux Assureurs comme aux Prestataires de Service à la Personne d'avoir une transparence parfaite du Delivery (Service fourni) et de travailler à l'amélioration continue du service aux assurés.</p>
-			<p><small>(*) Suivant vos conditions contractuelles de couverture d'assurance</small></p>
-			<p>Nous contacter ? <b>hello@sozen.life</b></p>
-		</div>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Plateforme d'accompagnement continu | Plateforme Sozen</title>
+        <meta name="description" content="Sozen est une plateforme d'accompagnement continu permettant aux assurances, mutuelles et prévoyances d'assister leur clients dans les problèmes de la vie quotidienne.">
+        <meta name="keywords" content="plateforme, accompagnement, continu, assurance, mutuelle, prevoyance, bénéficiaire, proches, intervenants, prestataire, assureur">
 
-			ga('create', 'UA-77234123-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="Plateforme d'accompagnement continu"/>
+        <meta property="og:image" content="http://sozen.life/images/logo-sozen.png"/>
+        <meta property="og:site_name" content="Sozen"/>
+        <meta property="og:description" content="Sozen est une plateforme d'accompagnement continu permettant aux assurances, mutuelles et prévoyances d'assister leur clients dans les problèmes de la vie quotidienne."/>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
+        <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="assets/styles/vendor/slick.css">
+        <!-- Lightbox -->
+        <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="assets/styles/vendor/animate.css">
+
+
+        <!-- Definity CSS -->
+        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/responsive.css">
+
+        <!-- JS -->
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body id="page-top">
+
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+        <!-- ========== Preloader ========== -->
+
+        <div class="preloader">
+          <img src="assets/images/loader.svg" alt="Chargement...">
+        </div>
+
+
+
+        <!-- ========== Navigation ========== -->
+
+        <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <!-- Logo -->
+              <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Sozen logo"></a>
+            </div><!-- / .navbar-header -->
+
+            <!-- Navbar Links -->
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#accueil" role="button">Accueil</a></li>
+                <li><a href="#experience" role="button">Expérience</a></li>
+                <li><a href="#offre" role="button">Offre</a></li>
+                <li><a href="#produit" role="button">Produit</a></li>
+                <li><a href="#newsletter" role="button">Newsletter</a></li>
+                <li><a href="#contact" role="button">Contact</a></li>
+              </ul><!-- / .nav .navbar-nav -->
+
+
+            </div><!--/.navbar-collapse -->
+          </div><!-- / .container -->
+        </nav><!-- / .navbar -->
+
+
+
+        <!-- ========== Hero Cover ========== -->
+
+        <div id="accueil" class="main-demo-hero">
+          <div class="bg-overlay">
+
+            <!-- Hero Content -->
+            <div class="hero-content-wrapper">
+              <div class="hero-content">
+                <img src="assets/images/logo-white.png" style="width:40%;min-width:250px;max-width:400px;" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" style="margin-bottom:20px;" />
+                <h1 class="hero-lead wow fadeInLeft" class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s">
+                  La plateforme d'accompagnement continu pour assurance, mutuelle et prévoyance.</h1>
+                <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">Organismes, bénéficiaires et prestataires 100% d'accord.</h4>
+                <a href="#experience" style="margin-top:20px" class="btn btn-ghost-light btn-round wow fadeIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-delay="11s">En savoir plus</a>
+
+              </div>
+            </div>
+
+            <!-- Scroller -->
+            <a href="#experience" class="scroller scroller-dark">
+              <span class="scroller-text">scroll</span>
+              <span class="linea-basic-magic-mouse"></span>
+            </a>
+
+          </div><!-- / .bg-overlay -->
+        </div><!-- / .main-hero-2 -->
+
+
+
+        <!-- ========== About ========== -->
+
+        <section id="experience" class="container">
+          <div class="row">
+
+            <div class="ws-l"></div>
+
+            <header class="sec-heading">
+              <h2>L'expérience Sozen</h2>
+              <span class="subheading">Du bénéficiaire au prestataire, le tout sous contrôle.</span>
+            </header>
+
+            <div class="col-md-offset-2 col-md-8 text-center ws-m">
+              <p>Sozen est une plateforme d'accompagnement continu permettant aux assurances, mutuelles et prévoyances d'assister leur clients dans les problèmes de la vie quotidienne.</p>
+            </div>
+
+            <div class="col-md-12">
+              <img class="img-responsive wow fadeIn" data-wow-duration="2s" src="assets/images/story.png" alt="">
+              <br/>
+            </div>
+
+          </div><!-- / .row -->
+        </section><!-- / .section -->
+
+
+
+        <!-- ========== Services ========== -->
+
+        <div class="gray-bg">
+          <section id="offre" class="container ft-cards">
+            <div class="row section">
+
+              <header class="sec-heading">
+                <h2>Ce que nous faisons</h2>
+                <span class="subheading">...et que vous n'aurez pas à faire.</span>
+              </header>
+
+              <!-- Item 1 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s">
+                  <span class="et-chat"></span>
+                  <h4>Accompagnement </h4>
+                  <p>Sozen permet d'assistez vos clients dans les problèmes de la vie quotidienne via une expérience tout en un :<br/>Une mise en relation personnalisée entre vous, le bénéficiaire et l'intervenant prestataire dans un contexte totalement sécurisé.</p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                  <span class="et-linegraph"></span>
+                  <h4>Traçabilité</h4>
+                  <p>Grâce à Sozen, Assureurs et Prestataires de Service à la Personne ont enfin une transparence parfaite du Delivery (Service fourni). <br/>En cas de litige tout devient plus zen grâce à la traçabilité des accords et des prestations.</p>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                  <span class="et-happy"></span>
+                  <h4>Satisfaction client</h4>
+                  <p>Les reporting Sozen vous permettent d'identifier les services les plus démandés par les assurés et d'avoir une vue d'ensemble des prestations rendues permettant de travailler à l'amélioration continue du service que vous proposez aux assurés.</p>
+                </div>
+              </div>
+
+            </div><!-- / .row -->
+          </section>
+        </div><!-- / .gray-bg -->
+
+
+        <!-- ========== Features - Centerd Image ========== -->
+
+        <section class="container section ft-x" id="produit">
+          <div class="row">
+
+            <header class="sec-heading">
+              <h2>Accessible partout et en continu</h2>
+              <span class="subheading">Conçu pour être au plus proches des bénéficiaires.</span>
+            </header>
+
+            <!-- Feature 1 -->
+            <div class="col-lg-4 wow fadeInLeft" data-wow-duration=".8s">
+
+              <!-- white space -->
+              <div class="ws-m"></div>
+
+              <!-- Material right aligned - Item 1 -->
+              <div class="col-md-12 no-gap ws-s ft-item ft-material right-align">
+                <div class="ft-content">
+                  <h5>Chatbot</h5>
+                  <p>A l'aide d'une intelligence artificielle, il traite les questions réponses les plus élémentaires et assiste vos téléconseillés.</p>
+                </div>
+                <div class="ft-icon">
+                  <i class="linea-basic-headset"></i>
+                </div>
+              </div><!-- / .ft-item -->
+
+              <!-- Material right aligned - Item 2 -->
+              <div class="col-md-12 no-gap ws-s ft-item ft-material right-align">
+                <div class="ft-content">
+                  <h5>Room & temps réel</h5>
+                  <p>Un espace de suivi de l'incident où sont connectés toutes les parties prenantes (bénéficiaire, proches, Assureur, prestataire).</p>
+                </div>
+                <div class="ft-icon">
+                  <i class="linea-basic-chronometer"></i>
+                </div>
+              </div><!-- / .ft-item -->
+
+            </div><!-- / .col-lg-4 -->
+
+            <!-- Center Image -->
+            <div class="col-lg-4">
+              <img src="assets/images/mobile-app.png" alt="iPad cover" class="img-responsive center-block wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+            </div>
+
+            <!-- Features Left -->
+            <div class="col-lg-4 wow fadeInRight"  data-wow-duration=".8s">
+
+              <!-- white space -->
+              <div class="ws-m"></div>
+
+              <!-- Item 3 -->
+              <div class="col-md-12 no-gap ws-s ft-item ft-material">
+                <i class="linea-basic-lock"></i>
+                <h5>Securité & traçabilité</h5>
+                <p>Vous bénéficiez des mesures de sécurité les plus performantes et d'une traçabilité de toutes les activités et prestations.</p>
+              </div><!-- / .ft-item -->
+
+              <!-- Item 4 -->
+              <div class="col-md-12 no-gap ws-s ft-item ft-material">
+                <i class="et-mobile"></i>
+                <h5>Multi-plateforme</h5>
+                <p>Pour suivre dans son quotidien le bénéficiaire, sozen est disponible sur smartphone, tablette et ordinateur de bureau.</p>
+              </div><!-- / .ft-item -->
+
+            </div><!-- / .col-lg-4 -->
+
+          </div><!-- / .row -->
+        </section><!-- / .container -->
+
+
+
+        <!-- ========== Contact ========== -->
+
+        <section id="contact" class="section contact-1">
+
+          <header class="sec-heading">
+            <h2>Contactez-nous !</h2>
+            <span class="subheading">Nous serons ravis d'échanger avec vous.</span>
+          </header>
+
+          <div class="contact-wrapper">
+            <!-- Map -->
+            <div id="map-canvas" class="gmap map-boxed"></div>
+
+            <!-- Show Info Button -->
+            <div class="show-info-link">
+              <a href="#" class="show-info"><i class="fa fa-info"></i><h6>Informations</h6></a>
+            </div>
+
+            <div class="container">
+              <div class="row ws-m">
+
+                <!-- Address Info -->
+                <div class="col-xs-offset-1 col-xs-11 col-md-offset-2 col-md-6 contact-info-wrapper">
+                  <address>
+                    <div class="row">
+
+                      <!-- Phone -->
+                      <div class="col-sm-6 address-group">
+                        <span>Téléphone</span>
+                        <a href="#">+ 33 6 86 56 48 83</a>
+                        <a href="#">+ 33 6 77 44 71 57</a>
+                      </div>
+
+                      <!-- Address -->
+                      <div class="col-sm-5 address-group">
+                        <span>Adresse</span>
+                        <p>69160 Tassin-la-Demi-Lune</p>
+                      </div>
+
+                    </div><!-- / .row -->
+
+                    <div class="row">
+
+                      <!-- Email -->
+                      <div class="col-sm-6 address-group">
+                        <span>Email</span>
+                        <a href="mailto:hello@sozen.life">hello@sozen.life</a>
+                      </div>
+
+                      <!-- Hours -->
+                      <div class="col-sm-5 address-group">
+                        <span>Horaires</span>
+                        <p>Lun-Ven: 9h-17h</p>
+                      </div>
+
+                    </div><!-- / .row -->
+
+                    <!-- Show Map Button -->
+                    <div class="row show-map-link">
+                      <a href="#" class="show-map"><span class="icon-map-pin"></span>Voir sur la carte</a>
+                    </div><!-- / .row -->
+                  </address>
+                </div><!-- / .contact-info-wrapper -->
+              </div><!-- / .row -->
+
+              <!-- Contact Form -->
+              <div class="row">
+                <iframe src="https://guillaume48.typeform.com/to/jf65aQ" frameborder="0" style="width:100%;height:290px;" scrolling="no"></iframe>
+              </div>
+            </div><!-- / .container -->
+          </div><!-- / .contact-wrapper -->
+        </section><!-- / .contact-1 -->
+
+
+
+        <!-- ========== Footer ========== -->
+
+        <footer class="footer-widgets">
+          <div class="container">
+            <div class="row section">
+
+              <!-- About Us -->
+              <div class="col-md-6 col-sm-12 mb-sm-100">
+                <div class="widget about-widget">
+                  <h5 class="header-widget">A propos</h5>
+                  <p>Sozen est une plateforme d'accompagnement continu permettant aux assurances, mutuelles et prévoyances d'assister leur clients dans les problèmes de la vie quotidienne.</p>
+
+
+                </div><!-- / .widget -->
+              </div><!-- / .col-md-3 -->
+
+              <!-- Twitter Feed -->
+              <div class="col-md-6 col-sm-12 mb-sm-100">
+                <div class="widget about-widget">
+                  <h5 class="header-widget">Suivez-nous</h5>
+                  <ul class="social-links">
+                    <li><a href="http://www.faceobok.com/sozenlife"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="http://www.twitter.com/sozenlife"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div><!-- / .widget -->
+              </div><!-- / .col-md-3 -->
+
+            </div><!-- / .row -->
+          </div><!-- / .container -->
+
+
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-sm-6">
+                  <small>&copy; 2016 Sozen SAS Tous droits réservés. Made with ❤ in Lyon</small>
+                </div>
+
+                <div class="col-sm-6">
+                  <small><a href="#page-top" class="pull-right to-the-top">Haut de page<i class="fa fa-angle-up"></i></a></small>
+                </div>
+
+              </div><!-- / .row -->
+            </div><!-- / .container -->
+          </div><!-- / .copyright -->
+
+        </footer><!-- / .footer-widgets -->
+
+
+
+        <!-- ========== Scripts ========== -->
+
+        <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/vendor/google-fonts.js"></script>
+        <script src="assets/js/vendor/jquery.easing.js"></script>
+        <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
+        <script src="assets/js/vendor/smoothscroll.js"></script>
+        <script src="assets/js/vendor/jquery.localScroll.min.js"></script>
+        <script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/vendor/jquery.stellar.min.js"></script>
+        <script src="assets/js/vendor/jquery.parallax.js"></script>
+        <script src="assets/js/vendor/slick.min.js"></script>
+        <script src="assets/js/vendor/jquery.easypiechart.min.js"></script>
+        <script src="assets/js/vendor/countup.min.js"></script>
+        <script src="assets/js/vendor/isotope.min.js"></script>
+        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/vendor/wow.min.js"></script>
+        <script src="assets/js/vendor/jquery.mb.YTPlayer.min.js"></script>
+        <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
+
+        <!-- Google Maps -->
+        <script src="assets/js/gmap.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s"></script>
+
+        <!-- Definity JS -->
+        <script src="assets/js/main.js"></script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-77234123-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+    </body>
 </html>
