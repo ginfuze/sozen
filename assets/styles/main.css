@@ -10,7 +10,7 @@ font-style: normal;
 
 @media all and (max-width: 768px) {
   .main-demo-hero .scroller,.hero-content img,iframe{display:none;}
-  h1{font-size:8vw !important;}
+  h1{font-size:7.5vw !important;}
 }
 
 /*
